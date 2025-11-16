@@ -1,0 +1,25 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+/*
+    Simple smart contract compatible with the Base blockchain.
+    - Stores a message
+    - Lets the user update it
+    - Lets anyone read it (public variable)
+
+    Ready to deploy on:
+    - Base Mainnet
+    - Base Sepolia
+*/
+
+contract MyBaseContract {
+    string public message;
+
+    constructor(string memory _message) {
+        message = _message;
+    }
+
+    function setMessage(string memory _newMessage) public {
+        message = _newMessage;
+    }
+}
