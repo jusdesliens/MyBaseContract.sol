@@ -1,2 +1,2 @@
 # MyBaseContract.sol
-Smart contrat BASE
+Smart contrat for BASE
